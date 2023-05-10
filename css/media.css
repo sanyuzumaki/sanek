@@ -1,0 +1,149 @@
+
+
+@media (max-width:1340px) {
+        
+    /* HEADER  */
+
+    #header-heading {
+        font-size: calc(25px + (45 - 25 ) * ((100vw -320px) / (1340 - 320)));
+        line-height: calc(31px + (55 - 31 ) * ((100vw -320px) / (1340 - 320)));
+        margin-bottom: calc(15px + (51 - 15 ) * ((100vw -320px) / (1340 - 320)));
+    }
+
+    #subheader-heading {
+        font-size: calc(21px + (35 - 21 ) * ((100vw -320px) / (1340 - 320)));
+    }
+
+
+
+
+    #section-title {
+        font-size: calc(23px + (48 - 23 ) * ((100vw -320px) / (1340 - 320)));
+    }
+
+    /* #benefits-descript{
+        font-size: calc(16px + (32 - 16 ) * ((100vw -320px) / (1340 - 320)))
+    } */
+
+    #why-us-list-item {
+        font-size: calc(14px + (30 - 14 ) * ((100vw -320px) / (1340 - 320)))
+    }
+
+    /* QANDA */
+
+    #accordion-qu {
+        font-size: calc(15px + (25 - 15 ) * ((100vw -320px) / (1340 - 320)))
+    }
+
+    #panel {
+        font-size: calc(15px + (25 - 15 ) * ((100vw -320px) / (1340 - 320)))
+    }
+}
+
+
+@media (max-width: 1300px) {
+
+
+    #benefits-btn {
+        display: none;
+    }
+}
+
+
+/* HEADER MEDIA */
+
+@media (max-width: 991.98px) {
+    .nav
+    .nav-list {
+        column-gap: 10px;
+    }
+
+    .nav-item
+    .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .nav
+    .nav-list{
+        display: none;
+    }
+
+    .nav
+    .nav-button {
+        display: block;
+    }
+
+    .nav.open .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        position: fixed;
+        padding: 0 20px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: white;
+        
+    }
+
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 14px;
+        border-bottom: 0.585938px solid #7B7B7B;
+    }
+
+    .nav-button {
+        position: absolute;
+        z-index: 100;
+        top:49px;
+        right: 30px;
+    } 
+
+}
+
+
+/* HEADER CONTENT  */
+
+@media (max-width: 991.98px) {
+
+    .header-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header-content-btn {
+        display: none;
+    }
+
+    .header-row
+    .header-content {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .header-row
+    .header-slider {
+        margin-top: 1px;
+    }
+
+
+}
+
+
+/* qanda */
+
+@media (max-width: 1250px ) {
+    .main-accordion {
+        flex-direction: column;
+    }
+    .main-accordion .qanda-accordion{
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+}

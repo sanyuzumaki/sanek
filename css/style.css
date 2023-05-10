@@ -1,0 +1,779 @@
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v25-cyrillic_latin-300.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-v25-cyrillic_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-cyrillic_latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-300.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-cyrillic_latin-300.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v25-cyrillic_latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-v25-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-cyrillic_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-cyrillic_latin-600.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  /* montserrat-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v25-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-v25-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/montserrat-v25-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/montserrat-v25-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/montserrat-v25-cyrillic_latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+  
+  
+  /* inter-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v12-cyrillic_latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/inter-v12-cyrillic_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-cyrillic_latin-regular.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v12-cyrillic_latin-600.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/inter-v12-cyrillic_latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-cyrillic_latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-600.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-cyrillic_latin-600.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  /* inter-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/inter-v12-cyrillic_latin-700.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/inter-v12-cyrillic_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/inter-v12-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/inter-v12-cyrillic_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/inter-v12-cyrillic_latin-700.svg#Inter') format('svg'); /* Legacy iOS */
+  }
+  
+
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	/*outline: none;*/
+}
+
+a:focus,
+a:active {
+	/* outline: none;*/
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 25px;
+  background: linear-gradient(113.75deg, #8AC3E3 1.78%, #FFFFFF 67.06%);
+  /* background: red; */
+  margin-bottom: 56px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 26px;
+}
+
+.nav-button {
+  display: none;
+  color: black;
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+
+.header-row {
+  min-height: 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-content {
+  padding-top: 252px;
+  padding-bottom: 242px;
+}
+
+.header-heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 122.222222%; /* 55/45 */
+  color: #000000;
+  margin-bottom: 51px;
+  max-width: 577px;
+
+}
+
+.header-content p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #000000;
+  margin-bottom: 51px;
+  max-width: 542px;
+}
+
+.header-content-btn {
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 29px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 279px;
+  max-height: 62px;
+  background: linear-gradient(92.55deg, #FF9900 2.63%, #FAFF00 113.91%);
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20.4852px;
+  line-height: 25px;
+  text-decoration: none;
+  color: #000000;
+  align-items: center;
+}
+
+.header-slider {
+  max-width: 710px;
+  width: 100%;
+  /* padding-top: 208px; */
+  margin-top: 208px;
+  position: relative;
+}
+
+/* SLIDER */
+
+/* Слайдер */
+/* .slick-slider{
+  max-width: 712px;
+  max-height: 475px;
+  width: 100%;
+  height: 100%;
+} */
+/* Слайдер запущен */
+.slick-slider.slick-initialized{}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+  display: flex;
+}
+/* Слайд */
+.slick-slide{}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{}
+/* Стрелка */
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+
+/* ПЕРЕВАГИ */
+
+.benefits {
+  margin-bottom: 54px;
+}
+
+.section-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px; 
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.benefits-slider-item {
+  display: flex;
+
+  
+
+}
+
+.benefits-slider-img img {
+}
+
+.benefits-slider-img {
+
+  
+}
+
+
+.benefits-slider-content {
+  padding-left: 76px;
+}
+
+.benefits-descript{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  max-width: 666px;
+  max-height: 196px;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+
+.benefits-slider {
+  max-height: 600px;
+  max-width: 1299px;
+  padding-top: 40px;
+}
+
+/* Точки (булиты) */
+.benefits-slider .slick-dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.benefits-slider .slick-dots li{
+  list-style: none;
+  margin: 0px 20px;
+
+}
+.benefits-slider .slick-dots li button{
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #626262;
+  border-radius: 50%;
+}
+
+.benefits-slider .slick-dots li.slick-active button{
+  font-size: 0;
+  width: 27px;
+  height: 27px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.benefits-btn {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 73px;
+  height: 73px;
+  background: #FBEE01;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #000000;
+  
+}
+
+/* КАТАЛОГ  */
+
+
+.catalog {
+  margin-bottom: 113px;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Создаем 3 колонки на ПК */
+  gap: 40px; /* Задаем расстояние между элементами */
+  margin-top: 64px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  padding: 20px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.37);
+}
+
+.card img {
+  display: block;
+  max-width: 100%; /* Картинка не будет выходить за пределы блока */
+  margin-bottom: 8px;
+}
+
+.card-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 46px;
+}
+
+.one-item-link {
+  display: inline-block;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid;
+  margin-left: 49px;
+}
+
+.card-price {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.card-button {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 767px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* Создаем 2 колонки на мобильных устройствах */
+  }
+}
+
+
+/* ПОЧЕМУ МЫ  */
+
+.why-us {
+  background: #A1CFE9;
+  padding-top: 49px;
+  padding-bottom: 64px;
+  margin-bottom: 110px;
+}
+
+.why-us-list li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.why-us-list {
+  margin-top: 52px;
+  list-style-position: inside;
+}
+
+.why-us-list li :last-child{
+  margin-bottom: 0;
+}
+
+/* .how-order {
+  margin-bottom: 128px;
+}
+
+.container-slider {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.how-order-slider .slick-slide {
+  align-items: center;
+}
+
+.how-order-slider {
+  display: flex;
+  margin: 0 auto;
+  min-width: 100%;
+  align-items: center;
+}
+
+.how-order-slider .how-order-slider-item {
+  width: 573px;
+  height: 327px;
+  
+}
+
+.how-order-slider .how-order-slider-item img {
+  width: 573px;
+  height: 327px; 
+}*/
+
+/* ПИТАННЯ ТА ВИДПОВИДИ */
+
+.qanda-accordion {
+  margin-bottom: 100px;
+}
+
+.main-accordion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.qanda-accordion {
+  padding-top: 76px;
+}
+
+.accordion {
+  cursor: pointer;
+  max-width: 585px;
+  width: 100%;
+  border-bottom: 1px solid;
+  text-align: left;
+  outline: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.596px;
+  line-height: 31px;
+  color: #000000;
+  transition: 0.4s;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.active, .accordion:hover {
+  
+}
+
+.accordion:after {
+  content: '\002B';
+  font-size: 40px;
+  font-weight: 500;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-width: 585px;
+  width: 100%;
+}
+
+.panel p {
+  padding: 28px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25.596px;
+  line-height: 31px;
+
+  color: #000000;
+}
+
+
+/* ФОРМА */
+
+.contact-form {
+  background: url('../images/background1.jpg') no-repeat center;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 102px;
+}
+
+.contact-form-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+
+.form {
+  padding-top: 50px;
+}
+
+
+.form__group {
+  margin-bottom: 32px;
+}
+
+
+.form__input {
+  width: 390px;
+  height: 73px;
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  padding-left: 10px;
+  color: #545454;
+  background-color: #FFFFFF;
+
+}
+
+.form__button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  width: 390px;
+  height: 73px;
+  background: #FBEE01;
+  color: #000000;
+  border: none;
+}
+
+
+/* ФУТЕР */
+
+.footer {
+  background-color: #000000;
+  height: 249px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.footer-col {
+  padding: 10px;
+}
+
+.footer-col img {
+  margin-bottom: 10px;
+}
+
+.time-work {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.footer-phone {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+
+  color: #FFFFFF;
+
+}
+
+.footer-info {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #FFFFFF;
+}
+
+h6 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+}
+
+.footer-info-list li {
+  margin-bottom: 15px;
+}
+
+.footer-info-list:last-child{
+  margin-bottom: 0px;
+}
